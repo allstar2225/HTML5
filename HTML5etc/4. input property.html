@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- html5 전용 css -->
-    <link rel="stylesheet" href="/HTML5/css/html5.css">
+    <link rel="stylesheet" href="../css/html5.css">
 
     <title>HTML5 Tag 모음</title>
 
@@ -53,7 +53,7 @@
     <hr>
     <h1>- autocomplete -</h1>
     <p>&plus; form이나 input에 사용 가능하며, 입력된 정보를 자동으로 저장해서 다음에 쓸때 화면에 명시됨</p>
-    <form action="/HTML5/public/Server.html" autocomplete="on">
+    <form action="../public/Server.html" autocomplete="on">
         이름 : <input type="text" name="name" placeholder="이름" size="15"><br>
         비번 : <input type="password" name="pass" placeholder="비밀번호" size="15" autocomplete="off"><br>
         <br>
@@ -63,7 +63,7 @@
     <hr>
     <h1>- novalidate -</h1>
     <p>&plus; 입력한 정보가 전송될떄 유효한지 아닌지 검사. 사파리에서 적용안됨</p>
-    <form action="/HTML5/public/Server.html" novalidate>
+    <form action="../public/Server.html" novalidate>
         주소를 입력하세요 : <input type="url" name="url">
         <input type="submit" value="OK">
     </form>
@@ -71,7 +71,7 @@
     <hr>
     <h1>- autofocus -</h1>
     <p>&plus; 웹페이지가 로드될때, autofocus로 되있는곳으로 커서가 활성화됨 </p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         이름 : <input type="text" name="name" placeholder="이름" size="15"><br>
         비번 : <input type="password" name="pass" placeholder="여기에 autofocus" size="15" autofocus><br>
         <input type="submit" value="OK">
@@ -80,7 +80,7 @@
     <hr>
     <h1>- form 외부에서 input속성 사용하기 -</h1>
     <p>&plus; form외부에 있어도 id를 이용하여 연결하여 사용이 가능하다. </p>
-    <form action="/HTML5/public/Server.html" id="here">
+    <form action="../public/Server.html" id="here">
         이름 : <input type="text" name="name" placeholder="이름" size="15"><br>
         <input type="submit" value="OK">
     </form>
@@ -90,18 +90,18 @@
     <hr>
     <h1>- formaction -</h1>
     <p>&plus; submit과 image에서 사용가능하며, 서버측에 파일을 바꿀때 사용 </p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         이름 : <input type="text" name="name" placeholder="이름" size="15" autofocus><br>
         비번 : <input type="password" name="pass" placeholder="비밀번호" size="15"><br>
         <input type="submit" value="일반 서버로 전송">
         <br>
-        <input type="submit" value="관리자 서버로 전송" formaction="/HTML5/public/PrivateServer.html">
+        <input type="submit" value="관리자 서버로 전송" formaction="../public/PrivateServer.html">
     </form>
 
     <hr>
     <h1>- formenctype -</h1>
     <p>&plus; submit과 image에서 사용가능하며, 데이터를 전송할때 암호화함. form요소의 method속성이 post일때 사용. </p>
-    <form action="/HTML5/public/Server.html" method="post">
+    <form action="../public/Server.html" method="post">
         이름 : <input type="text" name="name" placeholder="이름" size="15" autofocus><br>
         <input type="submit" value="암호화하여 전송" formenctype="multipart/form-data">
     </form>
@@ -109,7 +109,7 @@
     <hr>
     <h1>- formmethod -</h1>
     <p>&plus; submit과 image에서 사용가능하며, form에서 get으로 되있어도 input에서 post로 설정되있으면 post방식으로 전송 </p>
-    <form action="/HTML5/public/Server.html" method="get">
+    <form action="../public/Server.html" method="get">
         이름 : <input type="text" name="name" placeholder="이름" size="15" autofocus><br>
         <input type="submit" value="post로 진행" formmethod="post">
     </form>
@@ -117,7 +117,7 @@
     <hr>
     <h1>- formnovalidate -</h1>
     <p>&plus; submit 타입에서만 사용가능하며, data를 전송할때 유효한지 검사하지 않음. </p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         URL명 : <input type="url" name="url" placeholder="url주소" size="15" autofocus><br>
         <input type="submit" value="전송"> &nbsp; <input type="submit" name="novalidate" value="검사없이전송" formnovalidate>
     </form>
@@ -125,7 +125,7 @@
     <hr>
     <h1>- formtarget -</h1>
     <p>&plus; submit과 image에서 사용가능하며, 속성값에 따라 어디서 출력할지 정함. (_blank,_self 등등)</p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         사용자이름 : <input type="text" name="user" placeholder="사용자명" size="15" autofocus><br>
         <input type="submit" value="전송"> &nbsp; <input type="submit" value="_blank로 새창" formtarget="_blank">
     </form>
@@ -133,7 +133,7 @@
     <hr>
     <h1>- image -</h1>
     <p>&plus; input에 이미지를 심 을수 있다.</p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         사용자이름 : <input type="text" name="user" placeholder="사용자명" size="15" autofocus><br>
         <input type="image" src="/HTML5/img/background.jpg" alt="전송" width="50" height="50">
     </form>
@@ -141,7 +141,7 @@
     <hr>
     <h1>- list (datalist) -</h1>
     <p>&plus; input에 여러 옵션들을 넣을수 있다.</p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         <input list="example" name="list">
         <datalist id="example">
             <option value="name 1"></option>
@@ -155,7 +155,7 @@
     <hr>
     <h1>- min 과 max -</h1>
     <p>&plus; input에서 사용할수 있는 최소치와 최대치이다. number,range,date,time,datetime-local,month,week에서 사용</p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         <input type="date" name="minandmax" min="2020-01-01" max="2020-12-31"><br>
         <input type="submit" value="전송">
     </form>
@@ -163,7 +163,7 @@
     <hr>
     <h1>- multiple -</h1>
     <p>&plus; email, file 타입에서 사용할수 있고, 두개 이상의 입력값을 넣을때 사용</p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         <input type="file" name="upload" multiple><br>
         <input type="submit" value="전송">
     </form>
@@ -171,7 +171,7 @@
     <hr>
     <h1>- pattern -</h1>
     <p>&plus; text, password, email, tel, url에서 사용되며, 입력된 값의 문자열에 특정 규칙을 가지는 집합을 찾아내기 위한 패턴</p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         <input type="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]" title="이메일 양식">
         <input type="submit" value="전송">
     </form>
@@ -179,8 +179,8 @@
     <hr>
     <h1>- placeholder -</h1>
     <p>&plus; text, password, email, tel, search에서 사용되며, 입력칸에 불투명하게 글씨를 새겨넣음</p>
-    <form action="/HTML5/public/Server.html">
-        이름 : <input type="text" name="name" placeholder="이게 placeholder" autofocus><br>
+    <form action="../public/Server.html">
+        이름 : <input type="text" name="name" placeholder="name placeholder" autofocus><br>
         email : <input type="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]"
             title="이메일 양식" placeholder="email placeholder">
         <br>
@@ -190,7 +190,7 @@
     <hr>
     <h1>- required -</h1>
     <p>&plus; 반드시 입력해야 하는 문구에 사용 됨.</p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         이름 : <input type="text" name="name" placeholder="이게 placeholder" autofocus required><br>
         나이 : <input type="number" name="age" placeholder="0" min="1" max="99"><br>
         <input type="submit" value="전송">
@@ -199,7 +199,7 @@
     <hr>
     <h1>- step -</h1>
     <p>&plus; number, range, date, time, datetime-local, month, week에 사용되며, 지정된 숫자만큼 건너 띄며 숫자가 정해진다.</p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         <p>숫자 2씩 step 하며 min -100 ~ max 100까지이다</p>
         <input type="number" name="favorite" step="2" min="-100" max="100">
         <input type="submit" value="전송">
@@ -207,14 +207,14 @@
 
     <h1>- step -</h1>
     <p>&plus; number, range, date, time, datetime-local, month, week에 사용되며, 지정된 숫자만큼 건너 띄며 숫자가 정해진다.</p>
-    <form action="/HTML5/public/Server.html">
+    <form action="../public/Server.html">
         <p>숫자 2씩 step 하며 min -100 ~ max 100까지이다</p>
         <input type="number" name="favorite" step="2" min="-100" max="100">
         <input type="submit" value="전송">
     </form>
 
     <hr>
-    </pre><a href="/HTML5/index.html"> 첫페이지로</a></p>
+    </pre><a href="../index.html"> 처음으로</a></p>
 </body>
 
 </html>
