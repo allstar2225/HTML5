@@ -1,0 +1,71 @@
+<!-- HTML 5 선언 -->
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- 
+        meta 설명
+        문자셋 
+        검색 엔진용 참조
+        설명
+        저작권자
+        모바일 용 화면비율
+    -->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="HTML5">
+    <meta name="description" content="첫 시작">
+    <meta name="author" content="chohyunsu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- html5 전용 css -->
+    <link rel="stylesheet" href="/HTML5/css/html5.css">
+
+    <title>HTML5 Tag 모음</title>
+
+</head>
+
+<body>
+
+    <h1>- datalist 태그 -</h1>
+    <form action="/HTML5/public/Server.html">
+        <input list="computers" name="parts" >
+        <datalist id="computers">
+            <option value="board"></option>
+            <option value="cpu"></option>
+            <option value="ram"></option>
+            <option value="hdd"></option>
+        </datalist>
+    <input type="submit" value="전송">
+    </form>
+    
+    <hr>
+    <h1>- keygen 태그 -</h1>
+    <p>&plus;유저 이름을 입력하고 전송을 누르면 서버에 암호화가 되어 전송되어진다.</p>
+    <form action="/HTML5/public/Server.html">
+        유저이름 : <input type="text" name="username" placeholder="username">   <br>
+        암호화하여 전송. <br>
+        <keygen name="security">
+        <input type="submit" value="전송">
+    </form>
+
+    <hr>
+    <h1>- output 태그 -</h1>
+    <p>&plus;script로 계산된 결과를 바로 표시</p>
+    <form action="/HTML5/public/Server.html" oninput="total.value = parseInt(value01.value) / parseInt(value02.value)">
+        <input type="number" id="value01" name="input1번" value="30">
+        /
+        ( 0
+        <input type="range" id="value02" name="inpur2번" value="50"min="0" max="100">
+        100 )
+        =
+        <output name="total" for="value01 value02"></output>
+        <br><br>
+        <input type="submit" value="전송">
+    </form>
+    
+    <hr>
+    </pre><a href="/HTML5/index.html"> 첫페이지로</a></p>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!-- HTML 5 선언 -->
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- 
+        meta 설명
+        문자셋 
+        검색 엔진용 참조
+        설명
+        저작권자
+        모바일 용 화면비율
+    -->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="HTML5">
+    <meta name="description" content="첫 시작">
+    <meta name="author" content="chohyunsu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- style.css 임포트 -->
+    <link rel="stylesheet" href="/HTML5/css/style.css">
+
+    <title>HTML5 Tag 모음</title>
+
+</head>
+
+<body>
+
+    <h1>- table 기본 구조 -</h1>
+    <table class="table-standard">
+        <tr class="tr-standard">
+            <th>th 1</th>
+            <th>th 2</th>
+        </tr>
+        <tr class="tr-standard">
+            <td>td 1</td>
+            <td>td 2</td>
+        </tr>
+        <tr class="tr-standard">
+            <td>td 1</td>
+            <td>td 2</td>
+        </tr>
+    </table>
+
+
+    <hr>
+    <h1>- table border 한줄(collapse) 표시 -</h1>
+    <table>
+        <tr>
+            <th>th 1</th>
+            <th>th 2</th>
+        </tr> 
+        <tr>
+            <td>td 1</td>
+            <td>td 2</td>
+        </tr>
+        <tr>
+            <td>td 1</td>
+            <td>td 2</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>- table border 열(colspan) 합치기 -</h1>
+    <table class="table-standard">
+        <tr>
+            <th>th 1</th>
+            <th>th 2</th>
+        </tr> 
+        <tr class="tr-1">
+            <td>td 1</td>
+            <td class="td-text" colspan="2">td 2 (colspan으로 2열 합침)</td>
+        </tr>
+        <tr class="tr-2">
+            <td>td 1</td>
+            <td>td 2</td>
+            <td>td 3</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>- table border 행(rowspan) 합치기 -</h1>
+    <table class="table-standard">
+        <tr class="tr-1">
+            <th>th 1</th>
+            <th>th 2</th>
+            <th>th 3</th>
+        </tr>
+        <tr class="tr-2">
+            <td class="td-text" rowspan="2">2번째 td 1 (rowspan으로 2행 합침)</td>
+            <td>2번째 td 2</td>
+            <td>2번째 td 3</td>
+        </tr>
+        <tr class="tr-3">
+            <td>3번째 td 1</td>
+            <td>3번째 td 2</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>- table border 열(colspan) 행(rowspan) 합치기 -</h1>
+    <table class="table-standard">
+        <tr>
+            <th>th 1</th>
+            <th colspan="6">th2</th>
+        </tr>
+        <tr>
+            <td rowspan="3">첫번째 td 1</td>
+            <td>첫번째 td 2</td>
+            <td>첫번째 td 3</td>
+            <td>첫번째 td 4</td>
+            <td>첫번째 td 5</td>
+            <td>첫번째 td 6</td>
+            <td>첫번째 td 7</td>
+        </tr>
+        <tr>
+            <td colspan="2">두번째 td 1</td>
+            <td colspan="2">두번째 td 2</td>
+            <td colspan="2">두번째 td 3</td>
+        </tr>
+        <tr>
+            <td colspan="6">세번째 td 1</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h1>- table caption 사용 -</h1>
+    <table class="table-standard">
+        <caption> 테이블의 제목으로 사용되는 caption </caption>
+        <tr>
+            <td>내용1</td>
+            <td>내용2</td>
+            <td>내용3</td>
+        </tr>
+    </table>
+
+
+
+    <hr>
+    <p><a href="/HTML5/index.html"> 첫페이지로</a></p>
+</body>
+
+</html>

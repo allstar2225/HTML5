@@ -1,0 +1,17 @@
+/* Link의 상태 */
+a:link {
+    /* 한번도 방문 하지 않았을때 */
+    color: grey;
+}
+a:visited {
+    /* 한번이라도 방문했을때  */
+    color: red;
+}
+a:hover {
+    /* 링크에 마우스를 올렸을 때 */
+    color: yellow;
+}
+a:active {
+    /* 링크를 마우스로 누르고 있을 때 */
+    color: teal;
+}

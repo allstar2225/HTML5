@@ -1,0 +1,114 @@
+<!-- HTML 5 선언 -->
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- 
+        meta 설명
+        문자셋 
+        검색 엔진용 참조
+        설명
+        저작권자
+        모바일 용 화면비율
+    -->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="HTML5">
+    <meta name="description" content="첫 시작">
+    <meta name="author" content="chohyunsu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- style.css 임포트 -->
+    <link rel="stylesheet" href="/HTML5/css/style.css">
+    <link rel="stylesheet" href="/HTML5/css/link.css">
+
+    <title>HTML5 Tag 모음</title>
+
+</head>
+
+<body>
+
+    <h1>- 기존 Link 스타일 -</h1>
+    <a href="#"> href'#'으로 지정해둔 기본값</a>
+    
+    <hr>
+    <h1>- _blank 스타일 -</h1>
+    <a href="https://www.naver.com" target="_blank"> 네이버를 blank(새탭)으로 연다</a>
+    <br>
+    <h1>- _self 스타일 -</h1>
+    <a href="https://www.naver.com" target="_self"> 네이버를 self(현재 자식프레임)으로 연다</a>
+    <br>
+    <h1>- _parent 스타일 -</h1>
+    <a href="https://www.naver.com" target="_parent"> 네이버를 부모 프레임(최상위 프레임)으로 연다</a>
+    <br>
+    <h1>- 지정프레임 스타일 -</h1>
+    <a href="/HTML5/index.html" target="cFrame"> index.html을 지정된프레임(cFrame)으로 연다</a><br>
+    <iframe name="cFrame" style="width: 80%; height: 80%;"> </iframe>
+
+    <hr>
+    <h1>- 링크의 현재 상태 스타일 -</h1>  
+    <pre>
+    한번도 방문 안했을때 : link (회색)
+    한번이라도 방문햇을때 : visited (빨간색)
+    마우스를 링크에 올렸을 때 : hover (노란색)
+    마우스를 누르고 있을 때 : active (청록색)
+    </pre>
+
+    <a href="https://google.com">방문안함</a><br>
+    <a href="/HTML5/index.html">방문함</a>
+
+    <hr>
+    <h1>- bookmark 스타일 -</h1>  
+    <a href="#here"> 이 버튼을 누르면 지정된 곳으로 이동 </a>
+    <h3>위치 1</h3>
+    <p>내용</p>
+    <h3>위치 2</h3>
+    <p>내용</p>
+    <h3>위치 3</h3>
+    <p>내용</p>
+    <div style="border: 1px solid;">
+    <h3 id="here">위치 4</h3>
+    <p>이곳으로 이동</p>
+    </div>
+    <h3>위치 5</h3>
+    <p>내용</p>
+    <h3>위치 6</h3>
+    <p>내용</p>
+    <h3>위치 7</h3>
+    <p>내용</p>
+    <h3>위치 8</h3>
+    <p>내용</p>
+    <h3>위치 9</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+    <h3>위치 10</h3>
+    <p>내용</p>
+
+
+
+    <hr>
+    <p><a href="/HTML5/index.html"> 첫페이지로</a></p>
+</body>
+
+</html>

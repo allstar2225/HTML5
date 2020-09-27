@@ -1,0 +1,74 @@
+<!-- HTML 5 선언 -->
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- 
+        meta 설명
+        문자셋 
+        검색 엔진용 참조
+        설명
+        저작권자
+        모바일 용 화면비율
+    -->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="HTML5">
+    <meta name="description" content="첫 시작">
+    <meta name="author" content="chohyunsu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- style.css 임포트 -->
+    <link rel="stylesheet" href="/HTML5/css/style.css">
+
+    <title>HTML5 Tag 모음</title>
+
+</head>
+
+<body>
+
+    <h1>- iframe에 웹페이지 삽입 -</h1>
+    <iframe class="iframe-first" src="#"></iframe>
+    
+
+    <hr>
+    <h1>- iframe에 테두리 ( dashed, none ) -</h1>
+    <iframe class="iframe-first-border" src="#"></iframe>
+    <iframe class="iframe-first-none" src="#"></iframe>
+    
+
+    <hr>
+    <h1>- iframee 요소에 페이지 변경하기 ( target ) -</h1>
+    <iframe src="/HTML5/index.html" name="cFrame_target"></iframe>
+    <p><a href="/HTML5/public/11. List.html" target="cFrame_target">이 버튼으로 naver로 이동</a></p>
+    <p>안됨 이거</p>
+
+    <hr>
+    <h1>- 수직 frameset (안됨)-</h1>
+    <frameset cols="25%, *, 25%">
+        <frame name="left" src="/HTML5/public/1.heading.html" />
+        <frame name="center" src="/HTML5/public/2.Paragraph.html" />
+        <frame name="right" src="/HTML5/public/3.Formatting.html" />
+        <noframes>
+            frame을 지원하지 않는 브라우져는 이 글이 보인다
+        </noframes>
+    </frameset>
+
+    <hr>
+    <h1>- 수평 frameset (안됨)-</h1>
+    <frameset cols="20%, 60%, 20%">
+        <frame name="top" src="/HTML5/public/1.heading.html" noresize="noresize" />
+        <frame name="center" src="/HTML5/public/2.Paragraph.html" noresize="noresize" />
+        <frame name="bottom" src="/HTML5/public/3.Formatting.html" noresize="noresize" />
+        <noframes>
+            frame을 지원하지 않는 브라우져는 이 글이 보인다
+        </noframes>
+    </frameset>
+    
+
+
+    <hr>
+    <p><a href="/HTML5/index.html"> 첫페이지로</a></p>
+</body>
+
+</html>

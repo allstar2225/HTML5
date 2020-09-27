@@ -1,0 +1,109 @@
+<!-- HTML 5 선언 -->
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- 
+        meta 설명
+        문자셋 
+        검색 엔진용 참조
+        설명
+        저작권자
+        모바일 용 화면비율
+    -->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="HTML5">
+    <meta name="description" content="첫 시작">
+    <meta name="author" content="chohyunsu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- style.css 임포트 -->
+    <link rel="stylesheet" href="/HTML5/css/style.css">
+
+    <title>HTML5 Tag 모음</title>
+
+</head>
+
+<body>
+
+    <h1>- text / password -</h1>
+    <form action="/HTML5/public/Server.html">
+        <input type="text" placeholder="text input." name="username"><br>
+        <input type="password" placeholder="password" name="password"><br>
+    </form>
+
+    <hr>
+    <h1>- radio -</h1>
+    <form>
+        <input type="radio" name="button"> radio 1버튼<br>
+        <input type="radio" name="button"> radio 2버튼<br>
+        <input type="radio" name="button"> radio 3버튼<br>
+    </form>
+
+    <hr>
+    <h1>- checkbox -</h1>
+    <form>
+        <input type="checkbox" name="one" value="1"> 1 <br>
+        <input type="checkbox" name="two" value="2"> 2 <br>
+        <input type="checkbox" name="three" value="3"> 3 <br>
+    </form>
+
+    <hr>
+    <h1>- file select -</h1>
+    <form>
+        <input type="file" name="file_upload" accept="/img/*"> <br>
+    </form>
+
+    <hr>
+    <h1>- select -</h1>
+    <form>
+        <select name="computer">
+            <option value="BOARD">메인보드</option>
+            <option value="HDD">하드디스크</option>
+            <option value="SSD">SSD</option>
+            <option value="RAM">램</option>
+        </select>
+    </form>
+
+    <hr>
+    <h1>- text-area -</h1>
+    <form>
+        <textarea name="replay" id="" cols="30" rows="5">
+            입력칸
+        </textarea>
+
+        <hr>
+        <h1>- button -</h1>
+        <form>
+            <button type="button" onclick="alert('클릭함')">
+                버튼을 누르시오
+            </button>
+        </form>
+
+        <hr>
+        <h1>- 입력내용 전송하기 (submit 버튼) -</h1>
+        <form action="/HTML5/public/Server.html">
+            Nickname을 입력하세요 : <input type="text" name="nickname" placeholder="입력."><br>
+            <input type="submit" value="send">
+        </form>
+
+        <hr>
+        <h1>- fieldset 사용으로 하나로 사용 -</h1>
+        <form action="/HTML5/public/Server.html">
+            <fieldset>
+                <legend>양식</legend>
+                name : <input type="text" name="nickname" placeholder="유저이름"><br>
+                email : <input type="text" name="email" placeholder="이메일"><br>
+                <input type="submit" value="전송">
+            </fieldset>
+        </form>
+
+
+
+
+        <hr>
+        <p><a href="/HTML5/index.html"> 첫페이지로</a></p>
+</body>
+
+</html>

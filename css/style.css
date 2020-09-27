@@ -1,0 +1,206 @@
+/* body & 제목 태그 */
+.body-normal {
+    text-align: center; 
+    padding: 10px;
+}
+.h1-normal {
+    font-family: 'Times New Roman', Times, serif; font-weight: normal;
+    position: fixed;
+}
+
+/* 초기 스타일 태그 (id 선택자) */
+#background-color {
+    background-color: deepskyblue;
+}
+#color {
+    color: firebrick;
+}
+#font-size {
+    font-size: 5rem;
+}
+#text-align {
+    text-align: center;
+}
+#total {
+    background-color: deepskyblue;
+    color: firebrick;
+    font-size: 5rem;
+    text-align: center;
+}
+
+#body-img {
+    background-image: url(/HTML5/img/background.jpg);
+}
+
+/* image size 설정 (클래스 선택자) */
+.img-border{
+    border: 3px solid black;
+}
+
+.img-size {
+    width: 500px;
+    height: 500px;
+}
+
+/* list style */
+.upper-alpha {
+    list-style-type: upper-alpha;
+}
+.lower-alpha {
+    list-style-type: lower-alpha;
+}
+.upper-roman {
+    list-style-type: upper-roman;
+}
+.lower-roman {
+    list-style-type: lower-roman;
+}
+
+/* table 스타일 */
+.table-standard {
+    width: 30%;
+    height: 150px;
+}
+.tr-standard {
+    background-color: aqua;
+}
+
+/* border , collapse */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.td-text {
+    text-align: center;
+}
+.tr-1 {
+    background-color: burlywood;
+}
+.tr-2 {
+    background-color: chartreuse;
+}
+.tr-3 {
+    background-color: chocolate;
+}
+
+/* block 요소 style */
+.block-type {
+    border: 3px solid black;
+}
+
+/* inline 요소 style */
+.inline-type {
+    background-color: burlywood; color: darkblue;
+}
+
+/* iframe 초기 프레임값 */
+.iframe-first {
+    width: 50%;
+    height : 10rem;
+}
+.iframe-first-border {
+    width: 50%;
+    height : 5rem;
+    border: 3px dashed black;
+}
+.iframe-first-none {
+    width: 50%;
+    height : 5rem;
+    border: 3px none black;
+}
+
+/* layout 영역 표시 */
+/* div */
+#div_header {
+    background-color: lightgray;
+    height: 100px;
+}
+#div_nav {
+    background-color: lightseagreen;
+    width: 100px;
+    height: 300px;
+    float: left;
+}
+#div_section {
+    padding: 20px;
+    text-align: left;
+    float: left;
+}
+#div_footer {
+    background-color: black;
+    color: white;
+    height: 100px;
+    clear: both;
+}
+#div_header, #div_nav, #div_section, #div_footer {
+    text-align: center;
+}
+#div_header, #div_footer {
+    /* header와 footer의 content 높이  */
+    line-height: 100px;
+}
+#div_nav, #div_section {
+    line-height: 260px;
+}
+
+/* HTML5 */
+#h-header {
+    background-color: lightgray;
+    height: 100px;
+}
+#h-nav {
+    background-color: lime;
+    width: 200px;
+    height: 300px;
+    float: left;
+}
+#h-section {
+    width: 500px;
+    padding: 10px;
+    text-align: left;
+    float: left;
+}
+#h-footer {
+    background-color: violet;
+    height: 100px;
+    clear: both;
+}
+#h-header, #h-nav, #h-section, #h-footer {
+    text-align: center;
+}
+#h-header, #h-footer {
+    line-height: 100px;
+}
+#h-nav, #h-section {
+    line-height: 240px;
+}
+
+/* table */
+#t-table {
+    width: 100%;
+    text-align: center;
+    border: none;
+    
+}
+#t-th-head {
+    background-color: lightblue;
+    height: 100px;
+
+}
+#t-td-nav {
+    background-color: lightcoral;
+    width: 200px;
+    height: 300px;
+}
+#t-td-section {
+    text-align: left;
+    padding: 10px;
+}
+#t-td-footer {
+    background-color: maroon;
+    height: 100px;
+    color: white;
+}
+#t-th-head, #t-td-nav, #t-td-section, #t-td-footer {
+    border: none;
+}

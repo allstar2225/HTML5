@@ -1,0 +1,53 @@
+<!-- HTML 5 선언 -->
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- 
+        meta 설명
+        문자셋 
+        검색 엔진용 참조
+        설명
+        저작권자
+        모바일 용 화면비율
+    -->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="HTML5">
+    <meta name="description" content="첫 시작">
+    <meta name="author" content="chohyunsu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- style.css 임포트 -->
+    <link rel="stylesheet" href="/HTML5/css/style.css">
+
+    <title>HTML5 Tag 모음</title>
+
+</head>
+
+<body>
+
+    <h1>- javascript 기본 -</h1>
+    <p id="java_demo"></p>
+    <script>
+        document.getElementById("java_demo").innerHTML = "이 문구가 p태그 id에 들어갑니다";
+    </script>
+    
+    <hr>
+    <h1>- noscript로 지원하지 않는 브라우저에 문구 띄움 -</h1>
+    <p id="java_demo1"></p>
+    <script>
+        document.getElementById("java_demo1").innerHTML = "이 브라우저는 script를 지원합니다";
+    </script>
+    <noscript>
+        브라우저가 script를 지원하지 않습니다.
+    </noscript>
+    
+
+
+
+    <hr>
+    <p><a href="/HTML5/index.html"> 첫페이지로</a></p>
+</body>
+
+</html>
