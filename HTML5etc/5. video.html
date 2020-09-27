@@ -1,0 +1,82 @@
+<!-- HTML 5 선언 -->
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- 
+        meta 설명
+        문자셋 
+        검색 엔진용 참조
+        설명
+        저작권자
+        모바일 용 화면비율
+    -->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="HTML5">
+    <meta name="description" content="첫 시작">
+    <meta name="author" content="chohyunsu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- html5 전용 css -->
+    <link rel="stylesheet" href="/HTML5/css/html5.css">
+
+    <title>HTML5 Tag 모음</title>
+
+</head>
+
+<body>
+
+    <h1>- video 기본 태그 -</h1>
+    <p>&plus; 재생 대기 상태로 있는다</p>
+    <video style="widows: 400px; height:400px" controls>
+        <source src="/html5/media/supremeteam.mp4" type="video/mp4">
+        <p>브라우저가 지원하지 않을때 이 문구가 나온다</p>
+    </video>
+
+    <hr>
+    <h1>- autoplay 태그 -</h1>
+    <p>&plus; 자동으로 비디오를 재생 시킨다</p>
+    <video style="widows: 400px; height:400px" controls autoplay>
+        <source src="/html5/media/supremeteam.mp4" type="video/mp4">
+        <p>브라우저가 지원하지 않을때 이 문구가 나온다</p>
+    </video>
+
+    <hr>
+    <h1>- loop 태그 -</h1>
+    <p>&plus; 재생이 끝나더라도 반복 재생한다</p>
+    <video style="widows: 400px; height:400px" controls loop>
+        <source src="/html5/media/supremeteam.mp4" type="video/mp4">
+        <p>브라우저가 지원하지 않을때 이 문구가 나온다</p>
+    </video>
+
+    <hr>
+    <h1>- track 태그 -</h1>
+    <p>&plus; 동영상에 자막을 넣는다(vtt파일이 없어서 패스)</p>
+    <video style="widows: 400px; height:400px" controls loop>
+        <source src="/html5/media/supremeteam.mp4" type="video/mp4">
+        <track kind="subtitles" src="/html5/media/sub.srt" srclang="kr" label="korea">
+        <p>브라우저가 지원하지 않을때 이 문구가 나온다</p>
+    </video>
+
+    <hr>
+    <h1>- poster 태그 -</h1>
+    <p>&plus; 재생이 아닌 동영상의 경로를 불러온다</p>
+    <video style="widows: 400px; height:400px" controls poster="/html5/media/supremeteam.mp4">
+        <p>브라우저가 지원하지 않을때 이 문구가 나온다</p>
+    </video>
+
+    <hr>
+    <h1>- preload 태그 -</h1>
+    <p>&plus; 동영상을 재생하기전에 파일의 내용을 모두 불러올지 여부를 물어봄</p>
+    <video style="widows: 400px; height:400px" controls preload="auto">
+        <source src="/html5/media/supremeteam.mp4" type="video/mp4">
+        <p>브라우저가 지원하지 않을때 이 문구가 나온다</p>
+    </video>
+
+
+    <hr>
+    </pre><a href="/HTML5/index.html"> 첫페이지로</a></p>
+</body>
+
+</html>
