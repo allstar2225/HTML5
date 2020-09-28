@@ -31,3 +31,17 @@
 #h5-nav, #h5-section {
     line-height: 360px;
 }
+
+/* canvas 스타일 */
+.c_canvas {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+}
+#c_canvas, #c_canvas1 , #c_canvas2 , #c_canvas3 , #c_canvas4, #c_canvas5
+,#c_canvas6 , #c_canvas7 
+{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
