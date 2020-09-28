@@ -1,0 +1,90 @@
+<!-- HTML 5 선언 -->
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <!-- 
+        meta 설명
+        문자셋 
+        검색 엔진용 참조
+        설명
+        저작권자
+        모바일 용 화면비율
+    -->
+    <meta charset="UTF-8">
+    <meta name="keyword" content="HTML5">
+    <meta name="description" content="첫 시작">
+    <meta name="author" content="chohyunsu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- html5 전용 css -->
+    <link rel="stylesheet" href="../css/html5.css">
+
+    <title>HTML5 Tag 모음</title>
+
+</head>
+
+<body>
+
+    <h1>- drag and drop -</h1>
+    <p>&plus; 마우스로 해당 이미지를 다른쪽에 옮긴다.</p>
+
+    <!-- 초기 사진 로드 -->
+    <!-- 
+        ondrop : 객체를 놓으면 drop 이벤트 발생
+        ondragover : drag되는 객체가 어느 요소 위에 놓을수 있는지를 설정
+        dragable : 모든 요소를 드래그 할수 있는 객체로 변환 시켜줌
+        ondragstart : 드래그 가능 객체를 datatransfer 객체의 setData() 메소드를 호출하여 대상 객체의 데이터와 타입을 설정한다.
+    -->
+
+    <!-- drop이 진행되는 순서
+        1) dargstart(시작) -> dragenter(객체위로처음진입) -> dragover(대상위치에자리잡고있을때) -> drag(객체를 움직임) -> drop(객체를 놓는 장소에 위치한 객체) -> dragleave(마우스가 대상 객체에서 벗어남) -> dragend(드래그 객체를 마우스버튼으로 놓는순간)
+    -->
+    <div class="div_dropbox" ondrop="drop(event)" ondragover="dragEnter(event)">
+        <img id="Dog" src="../img/welsh.jpeg" alt="강아지" width="180" height="270" draggable="true"
+            ondragstart="drag(event)">
+
+    </div>
+
+    <!-- 그림을 옮겨 담을 위치 -->
+    <div class="div_dropbox" ondrop="drop(event)" ondragover="dragEnter(event)"></div>
+
+    <!-- 이벤트를 위한 함수 설정 -->
+    <script>
+    
+        // 내려놓을 위치에 갔을때
+        // parameta.preventDefault : 이벤트의 발생을 막아준다. 설정해 두지 않으면 이미지가 이동 위치에 올라가지 않는다.
+        function dragEnter(logic) {
+            logic.preventDefault();
+        }
+
+        // 드래그 시
+        // dataTransfer : 드래그 할수 없는 텍스트가 아니라는것을 확인하고 데이터를 dataTransfer 객체로 저장하고 복사, 이동같은 허용된 효과 설정.
+        /* 
+        dataTransfer의 기본 메서드
+        - serData() : 데이터를 추가하거나 기존 데이터를 바꿔 저장할때
+        - getData() : 명시된 형식에 맞는 데이터를 문자열 형대로 반환
+        - clearData() : 데이터를 제거할 때
+        */
+        function drag(logic) {
+            logic.dataTransfer.setData("text", logic.target.id);
+        }
+
+        // 마우스에서 객체를 놓았을때
+        // appendChild() : 한 노드를 특정 부모 노드의 자식 노드 리스트 중 마지막 자식으로 붙힌다.
+        function drop(logic) {
+            logic.preventDefault();
+            var common = logic.dataTransfer.getData("text");
+            logic.target.appendChild(document.getElementById(common));
+        }
+
+    </script>
+
+
+    <hr style="clear:both;" ;">
+    <p style="clear:both;" ;"><a href=",,/index.html"> 첫페이지로</a></p>
+
+</body>
+
+</html>
