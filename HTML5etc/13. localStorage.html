@@ -27,8 +27,8 @@
 
 <body>
 
-    <h1>- SessionStorage object -</h1>
-    <p>&plus; sessionstorage는 하나의 세션을 위한 데이터를 저장하는 객체, 창을 닫지 않으면 현재 데이터가 그대로 남아있다.</p>
+    <h1>- localStorage object -</h1>
+    <p>&plus; localStorage는 객체의 보관기간이 없다. 따라서 창을 닫아도, 재부팅을 해도 남아있는다. </p>
 
     <!-- 값을 출력 -->
     <div id="result"></div>
@@ -36,22 +36,19 @@
     <p><button onclick="counter()" type="button"> 카운터 증가</button></p>
 
     <script>
-
-        // counter를 올릴 함수
-        // typeof (storage) 인터페이스 자체내장
-        // sessionStorage.원하는이름 = Number(sessionStorage.원하는이름)
         function counter() {
             if (typeof (Storage) !== "undefined") {
-                if (sessionStorage.counter) {
-                    sessionStorage.counter = Number(sessionStorage.counter) + 1;
+                if (localStorage.counter) {
+                    localStorage.counter = Number(localStorage.counter) + 1;
                 } else {
-                    sessionStorage.counter = 1;
+                    localStorage.counter = 1;
                 }
-                document.getElementById("result").innerHTML = "현재 카운터 : " + sessionStorage.counter + " 입니다.";
+                document.getElementById("result").innerHTML = "현재 카운터 : " + localStorage.counter;
             } else {
-                document.getElementById("result").innerHTML = "이 문장은 웹 브라우저가 storage를 지원하지 않을때 나옴";
+                document.getElementById("result").innerHTML = " 이 문장은 브라우저가 지원하지 않을때 나타난다."
             }
         }
+
     </script>
 
 

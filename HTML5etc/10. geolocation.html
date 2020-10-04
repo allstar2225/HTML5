@@ -34,22 +34,22 @@
     <!-- 현재 위치에 대한 위도 경도를 나타낸다 -->
     <p id="myLocation"></p>
 
-    <button onclick="position()"> 위도와 경도의 정확한 값 </button>
+    <button onclick="position1()"> 위도와 경도의 정확한 값 </button>
     <p id="myaccuracy"></p>
 
-    <button onclick="position()"> 해수면 값 </button>
+    <button onclick="position2()"> 해수면 값 </button>
     <p id="myaltitude"></p>
 
-    <button onclick="position()"> 고도 값 </button>
+    <button onclick="position3()"> 고도 값 </button>
     <p id="myaltitudeAccuracy"></p>
 
-    <button onclick="position()"> 북쪽 기준 현재 진행 방향에 대한 시계방향의 각도값 </button>
+    <button onclick="position4()"> 북쪽 기준 현재 진행 방향에 대한 시계방향의 각도값 </button>
     <p id="myheading"></p>
 
-    <button onclick="position()"> 초당 이동 미터수를 나타내는 속도값 </button>
+    <button onclick="position5()"> 초당 이동 미터수를 나타내는 속도값 </button>
     <p id="myspeed"></p>
 
-    <button onclick="position()"> 위치 정보로 가져온 시간 </button>
+    <button onclick="position6()"> 위치 정보로 가져온 시간 </button>
     <p id="mytimestamp"></p>
 
     <script>
@@ -73,102 +73,84 @@
             else {
                 my_lat.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
             }
-
-            // 위도 경도 의 정확한 값을 눌렀을때
+        }
+        function position1() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(myAcc, errorMsg);
             }
             else {
-
-                my_acc.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
-
+                my_lat.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
             }
-
-
-            // 위도 경도 버튼을 눌럿을때
+        }
+        function position2() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(myAlt, errorMsg);
             }
             else {
-
-                my_alt.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
-
+                my_lat.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
             }
-
-            // 위도 경도 버튼을 눌럿을때
+        }
+        function position3() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(myAltacc, errorMsg);
             }
             else {
-
-                my_altacc.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
-
+                my_lat.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
             }
-
-            // 위도 경도 버튼을 눌럿을때
+        }
+        function position4() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(myHeading, errorMsg);
             }
             else {
-
-                my_heading.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
-
+                my_lat.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
             }
-
-            // 위도 경도 버튼을 눌럿을때
+        }
+        function position5() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(mySpeed, errorMsg);
             }
             else {
-
-                my_speed.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
-
+                my_lat.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
             }
-
-            // 위도 경도 버튼을 눌럿을때
+        }
+        function position6() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(myTime, errorMsg);
             }
-            // 하지만 작동하지 않는다면
             else {
-
-                my_time.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
+                my_lat.innerHTML = "이 문장은 geolocation을 지원하지 않을때 뜬다"
             }
         }
 
-        // position이 작동하면 my_loc에 현재 위도와 경도를 저장한다.
+
+        // logic 함수
         function myLatLng(latlng) {
             my_lat.innerHTML = "현재 나의 위치는 위도 : " + latlng.coords.latitude + ", 경도 : " + latlng.coords.longitude;
         }
 
-        // position이 작동하면 my_loc에 현재 위도와 경도를 저장한다.
         function myAcc(acc) {
             my_acc.innerHTML = "정확한 위치 : " + acc.coords.accuracy;
         }
 
-        // position이 작동하면 my_loc에 현재 위도와 경도를 저장한다.
         function myAlt(alt) {
-            my_acc.innerHTML = "해수면 값 : " + alt.coords.altitude;
+            my_alt.innerHTML = "해수면 값 : " + alt.coords.altitude;
         }
 
-        // position이 작동하면 my_loc에 현재 위도와 경도를 저장한다.
         function myAltacc(altacc) {
-            my_acc.innerHTML = "정확한 위치 : " + altacc.coords.altitudeAccuracy;
+            my_altacc.innerHTML = " 고도 : " + altacc.coords.altitudeAccuracy;
         }
 
-        // position이 작동하면 my_loc에 현재 위도와 경도를 저장한다.
         function myHeading(heading) {
-            my_acc.innerHTML = "정확한 위치 : " + heading.coords.heading;
+            my_heading.innerHTML = " 각도값 : " + heading.coords.heading;
         }
 
-        // position이 작동하면 my_loc에 현재 위도와 경도를 저장한다.
         function mySpeed(speed) {
-            my_acc.innerHTML = "정확한 위치 : " + speed.coords.speed;
+            my_speed.innerHTML = " 속도 : " + speed.coords.speed;
         }
 
-        // position이 작동하면 my_loc에 현재 위도와 경도를 저장한다.
         function myTime(time) {
-            my_acc.innerHTML = "정확한 위치 : " + time.timestamp;
+            my_time.innerHTML = " 시간 : " + time.timestamp;
         }
 
 
@@ -197,7 +179,7 @@
 
 
     <hr>
-    </pre><a href=",,/index.html"> 첫페이지로</a></p>
+    </pre><a href="../index.html"> 첫페이지로</a></p>
 </body>
 
 </html>
